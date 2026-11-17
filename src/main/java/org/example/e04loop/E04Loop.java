@@ -26,5 +26,14 @@ public class E04Loop {
         // ...
         // 9 X 8 = 72
         // 9 X 9 = 81
+        int dan = 2;
+        int maxMultiCnt = 9;
+        int minMultiCnt = 1;
+        for(int i = dan; i <= maxMultiCnt; i++) {
+            System.out.printf("** %d단 **%n", i);
+            for(int z = minMultiCnt; z <= maxMultiCnt; z++) {
+                System.out.printf("%d X %d = %d%n", i, z, (i * z));
+            }
+        }
     }
 }
